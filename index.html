@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="The Twin Bloom Orchards - Premium Kashmir Apples and Dry Fruits near Pahalgam. Red Delicious, Gala Apples, Walnuts, and Walnut Kernels." />
+<meta name="keywords" content="Twin Bloom Orchards, Kashmir apples, Red Delicious, Gala apples, walnuts, walnut kernels, near Pahalgam" />
+<title>The Twin Bloom Orchards</title>
+<style>
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f7f2e9;color:#222}
+header{background:#2b463c;color:#fff;padding:1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header h1{margin:0;font-size:1.6rem}
+nav a{color:#fff;margin:0 0.5rem;text-decoration:none;font-weight:bold}
+nav a:hover{text-decoration:underline}
+main{padding:1rem}
+section{margin:2rem 0}
+.hero{background:url('hero.jpg') center/cover no-repeat;padding:3rem 1rem;text-align:center;color:#fff;border-radius:12px}
+.hero h2{font-size:2rem;margin:0 0 1rem}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.product{border:1px solid #ddd;border-radius:8px;padding:1rem;text-align:center;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+.product img{max-width:100%;border-radius:8px;margin-bottom:0.5rem}
+button.buy,button.buy-now{background:#e67e22;color:#fff;border:none;padding:0.5rem 1rem;border-radius:8px;cursor:pointer;margin:0.3rem}
+button.buy:hover,button.buy-now:hover{background:#cf6d17}
+#cart{border:1px solid #ccc;padding:1rem;border-radius:8px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.gallery-grid img{width:100%;border-radius:8px}
+footer{background:#2b463c;color:#fff;text-align:center;padding:1rem;margin-top:2rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>The Twin Bloom Orchards</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#special">Why Apples</a>
+    <a href="#recipe">Recipe</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+<section id="home" class="hero">
+  <h2>Welcome to The Twin Bloom Orchards</h2>
+  <p>A lush, family‑owned apple orchard nestled in the breathtaking valleys of Kashmir.</p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="products-grid">
+    <div class="product" data-name="Red Delicious Apples" data-price="220" data-shipping="40">
+      <img src="red-delicious.jpg" alt="Red Delicious Apples" />
+      <h3>Red Delicious Apples</h3>
+      <p>₹220 per kg (+₹40 shipping per kg)</p>
+      <button class="buy">Add to Cart</button>
+      <button class="buy-now">Buy Now on WhatsApp</button>
+    </div>
+    <div class="product" data-name="Gala Apples" data-price="220" data-shipping="40">
+      <img src="gala.jpg" alt="Gala Apples" />
+      <h3>Gala Apples</h3>
+      <p>₹220 per kg (+₹40 shipping per kg)</p>
+      <button class="buy">Add to Cart</button>
+      <button class="buy-now">Buy Now on WhatsApp</button>
+    </div>
+    <div class="product" data-name="Walnuts" data-price="420" data-shipping="0">
+      <img src="walnut.jpg" alt="Walnuts" />
+      <h3>Walnuts</h3>
+      <p>₹420 per kg</p>
+      <button class="buy">Add to Cart</button>
+      <button class="buy-now">Buy Now on WhatsApp</button>
+    </div>
+    <div class="product" data-name="Walnut Kernels" data-price="1500" data-shipping="0">
+      <img src="walnut-kernel.jpg" alt="Walnut Kernels" />
+      <h3>Walnut Kernels</h3>
+      <p>₹1500 per kg</p>
+      <button class="buy">Add to Cart</button>
+      <button class="buy-now">Buy Now on WhatsApp</button>
+    </div>
+  </div>
+  <h3>Your Cart</h3>
+  <div id="cart">
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> ₹<span id="total">0</span></p>
+    <button id="checkout" class="buy">Checkout on WhatsApp</button>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="gallery1.jpg" alt="Gallery 1">
+    <img src="gallery2.jpg" alt="Gallery 2">
+    <img src="gallery3.jpg" alt="Gallery 3">
+    <img src="gallery4.jpg" alt="Gallery 4">
+    <img src="gallery5.jpg" alt="Gallery 5">
+    <img src="gallery6.jpg" alt="Gallery 6">
+    <img src="gallery7.jpg" alt="Gallery 7">
+    <img src="gallery8.jpg" alt="Gallery 8">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Established in 2020, The Twin Bloom Orchards is a family-run orchard located just 15 km from Pahalgam. Surrounded by snow-capped mountains and fresh forest air, we grow premium Gala and Red Delicious apples during harvest season (August to October). We also provide premium dry fruits like walnuts and walnut kernels, ready to be delivered to your doorstep.</p>
+</section>
+
+<section id="special">
+  <h2>Why Kashmiri Apples Are Special</h2>
+  <p>Kashmiri apples are world‑famous for their unmatched taste and quality. The unique climate of Kashmir allows apples to ripen slowly, enhancing sweetness and crunch. The fertile soil and snow‑melt irrigation give them vibrant color and juiciness that make them unique.</p>
+</section>
+
+<section id="recipe">
+  <h2>Apple & Walnut Delight Recipe</h2>
+  <p><strong>Ingredients:</strong> 2 Kashmiri apples (chopped), 1/2 cup walnut kernels, 2 tbsp honey, a pinch of cinnamon.</p>
+  <p><strong>Method:</strong> Toast walnuts, mix with chopped apples, drizzle with honey and cinnamon. A perfect healthy treat!</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>WhatsApp: <a href="https://wa.me/919149957289">+91 9149957289</a></p>
+  <p>Email: <a href="mailto:furkanmeer9@gmail.com">furkanmeer9@gmail.com</a></p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31762.33008447891!2d75.233!3d34.014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1b7ac218bcf27%3A0xf9e887e5fdb7f508!2sTwin%20Bloom%20Orchards!5e0!3m2!1sen!2sin!4v1710000000000" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+</section>
+</main>
+<footer>
+  &copy; 2025 The Twin Bloom Orchards. All rights reserved.
+</footer>
+
+<script>
+let cart = [];
+const cartItemsEl = document.getElementById('cart-items');
+const totalEl = document.getElementById('total');
+
+// Add to Cart
+document.querySelectorAll('.buy').forEach(btn=>{
+  if(btn.id==='checkout') return;
+  btn.addEventListener('click',()=>{
+    const p = btn.closest('.product');
+    const name = p.dataset.name;
+    const price = parseInt(p.dataset.price);
+    const shipping = parseInt(p.dataset.shipping);
+    const existing = cart.find(i=>i.name===name);
+    if(existing){ existing.qty++; } else { cart.push({name,price,shipping,qty:1}); }
+    renderCart();
+  });
+});
+
+// Buy Now on WhatsApp
+document.querySelectorAll('.buy-now').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const p = btn.closest('.product');
+    const name = p.dataset.name;
+    const price = parseInt(p.dataset.price);
+    const shipping = parseInt(p.dataset.shipping);
+    const message = `Hello! Welcome to the twin bloom orchards%0AHow can we help you?%0AProduct: ${name} (1 kg) at ₹${price}${shipping>0?` + ₹${shipping} shipping`:''}`;
+    window.open(`https://wa.me/919149957289?text=${message}`,'_blank');
+  });
+});
+
+function renderCart(){
+  cartItemsEl.innerHTML = '';
+  let total = 0;
+  cart.forEach(item=>{
+    let li = document.createElement('li');
+    li.textContent = `${item.name} x ${item.qty} kg`;
+    cartItemsEl.appendChild(li);
+    total += (item.price + item.shipping)*item.qty;
+  });
+  totalEl.textContent = total;
+}
+
+// Checkout
+document.getElementById('checkout').addEventListener('click',()=>{
+  if(cart.length===0){ alert('Cart is empty'); return; }
+  let message = 'Hello! Welcome to the twin bloom orchards%0AHow can we help you?%0AOrder details:%0A';
+  cart.forEach(item=>{
+    message += `${item.name} x ${item.qty}kg = ₹${(item.price+item.shipping)*item.qty}%0A`;
+  });
+  message += `Total: ₹${totalEl.textContent}`;
+  window.open(`https://wa.me/919149957289?text=${message}`,'_blank');
+});
+</script>
+</body>
+</html>
